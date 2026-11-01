@@ -1,0 +1,14 @@
+# ToDo Create a basic Python file with a simple function that takes two numbers as input and returns their sum.
+def add_numbers(num1, num2):
+    """This function takes two numbers as input and returns their sum."""
+    return num1 + num2
+
+def main():
+    # Example usage of the add_numbers function
+    number1 = 5
+    number2 = 10
+    result = add_numbers(number1, number2)
+    print(f"The sum of {number1} and {number2} is: {result}")
+
+if __name__ == "__main__":
+    main()
