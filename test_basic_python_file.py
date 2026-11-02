@@ -25,7 +25,8 @@ class TestDivideNumbers(unittest.TestCase):
 
         self.assertEqual(result, 4)
         self.assertEqual(output.getvalue(), "babaooey\n")
-
+    
 
 if __name__ == "__main__":
     unittest.main()
+
