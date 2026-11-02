@@ -1,4 +1,4 @@
-# ---------- FUNCTIONS ----------
+# Functions
 
 def add_numbers(num1, num2):
     """This function takes two numbers as input and returns their sum."""
@@ -18,10 +18,18 @@ def divide_numbers(num1, num2):
         print("babaooey")
     return result
 
+def display_outputs(outputs):
+    """Print each calculator result stored in the output list."""
+    for output in outputs:
+        print(output)
 
-# ---------- MAIN FUNCTION ----------
 
-def main():
+# Main program
+
+def main(outputs=None):
+    if outputs is None:
+        outputs = []
+
     number1 = int(input("Enter the first number: "))
     number2 = int(input("Enter the second number: "))
     
@@ -29,18 +37,19 @@ def main():
     
     if choice == "add":
         result = add_numbers(number1, number2)
-        print(f"The sum of {number1} + {number2} is: {result}")
+        outputs.append(f"The sum of {number1} + {number2} is: {result}")
     elif choice == "multiply":
         result = multiply_numbers(number1, number2)
-        print(f"The product of {number1} * {number2} is: {result}")
+        outputs.append(f"The product of {number1} * {number2} is: {result}")
 
     continue_choice = input("Do you want to perform another operation? (yes/no): ").strip().lower()
 
     if continue_choice == "yes":
-        main()  # Call main again for another operation
+        main(outputs)
     else:
+        display_outputs(outputs)
         print("Thank you for using the calculator!")
         
-# When you run a pyhton file directly, its __name__ variable is set to "__main__". 
+# Run the program when this file is executed directly.
 if __name__ == "__main__":
     main()
