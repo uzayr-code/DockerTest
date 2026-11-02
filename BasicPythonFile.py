@@ -5,10 +5,11 @@ def add_numbers(num1, num2):
 
 def main():
     # Example usage of the add_numbers function
-    number1 = 5
+    number1 = 10
     number2 = 10
     result = add_numbers(number1, number2)
     print(f"The sum of {number1} and {number2} is: {result}")
 
+# When you run a pyhton file directly, its __name__ variable is set to "__main__". 
 if __name__ == "__main__":
     main()
