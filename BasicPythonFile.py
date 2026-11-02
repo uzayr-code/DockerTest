@@ -27,7 +27,7 @@ def main():
     if continue_choice == "yes":
         main()  # Call main again for another operation
     else:
-        print("Thank you for using the calculator. Goodbye!")
+        print("Thank you for using the calculator.")
         
 # When you run a pyhton file directly, its __name__ variable is set to "__main__". 
 if __name__ == "__main__":
