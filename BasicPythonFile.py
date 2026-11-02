@@ -1,4 +1,5 @@
-# ToDo Create a basic Python file with a simple function that takes two numbers as input and returns their sum.
+# ---------- FUNCTIONS ----------
+
 def add_numbers(num1, num2):
     """This function takes two numbers as input and returns their sum."""
     return num1 + num2
@@ -7,9 +8,20 @@ def multiply_numbers(num1, num2):
     """This function takes two numbers as input and returns their product."""
     return num1 * num2
 
+def divide_numbers(num1, num2):
+    """Return the result of dividing num1 by num2.
+
+    Print "babaooey" when the result equals 4.
+    """
+    result = num1 / num2
+    if result == 4:
+        print("babaooey")
+    return result
+
+
+# ---------- MAIN FUNCTION ----------
 
 def main():
-    # Example usage of the add_numbers function
     number1 = int(input("Enter the first number: "))
     number2 = int(input("Enter the second number: "))
     
