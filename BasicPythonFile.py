@@ -22,6 +22,13 @@ def main():
         result = multiply_numbers(number1, number2)
         print(f"The product of {number1} * {number2} is: {result}")
 
+    continue_choice = input("Do you want to perform another operation? (yes/no): ").strip().lower()
+
+    if continue_choice == "yes":
+        main()  # Call main again for another operation
+    else:
+        print("Thank you for using the calculator. Goodbye!")
+        
 # When you run a pyhton file directly, its __name__ variable is set to "__main__". 
 if __name__ == "__main__":
     main()
